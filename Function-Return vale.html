@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Return Value</title>
+    <link rel="stylesheet" href="function-return/function-return.css">
+</head>
+<body>
+    <h1>Function Return Values</h1>
+    <h2>1.Implementing function return values</h2>
+    <input class="numberInput" type="text" placeholder="Type number....">
+    <p id="numberOutput"></p>
+    <hr>
+    <h2>2.Test-1:prints a random name from the provided array</h2>
+    <p>Step-by-step explanation<br>
+        Math.random() → gives a random number between 0 and 1 (like 0.47).<br>
+        Math.random() * names.length → scales that number to the array’s size.<br>
+        If there are 5 names, this becomes a number between 0 and 5 (not including 5).<br>
+        Math.floor() → rounds it down to a whole number (so you get a valid index).<br>names[randomIndex] → picks one random element from the array.<br>
+        para.textContent = randomName; → displays that name in the paragraph.<br>chooseName(); → runs the function once.<br>
+    </p>
+    <p id="task1Output"></p>
+    <hr>
+    <h2>3.function run every time a button is clicked, so the paragraph shows a new random name each time.</h2>
+    <p id="randomNameOutput"></p>
+    <button class="test1">Choose a random name</button>
+    <hr>
+    <h2>2.Test-2 Function that creats or Draw A Rectangle on Canvas</h2>
+    <canvas width="240" height="160"></canvas>
+    <hr>
+    <h2>2.1Function that Draws Random Canvas circles</h2>
+    <button class="btn-circles">Update</button>
+    <canvas class="circles"></canvas>
+
+    <script src="Return/Return.js"></script>
+</body>
+</html>
